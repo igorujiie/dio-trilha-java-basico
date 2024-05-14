@@ -11,8 +11,6 @@ public class Contador {
         System.out.println("Digite o segundo parâmetro");
         int parametroDois = terminal.nextInt();
 
-        int ocorrencias = parametroDois - parametroUm;
-
         try {
             //chamando o método contendo a lógica de contagem
             contar(parametroUm, parametroDois);
@@ -29,9 +27,16 @@ public class Contador {
             throw new ParametrosInvalidosException();
         }
 
-        int contagem = parametroDois - parametroUm;
+        int ocorrencia = parametroDois - parametroUm;
+
+        /*
+        Pensando numa solucao mais direta, e driblando o problema de numeros negativos
+
+        int ocorrencia = Math.abs(parametroDois - parametroUm);
+        */
+
         //realizar o for para imprimir os números com base na variável contagem
-        for(int i =1; i <=contagem; i++){
+        for(int i =1; i <=ocorrencia; i++){
             System.out.println("Imprimindo o número " + i);
         }
     }
