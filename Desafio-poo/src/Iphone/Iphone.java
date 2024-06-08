@@ -6,6 +6,10 @@ import ReprodutorMusical.ReprodutorMusical;
 
 
 public class Iphone implements AparelhoTelefonico, NavegadorInternet, ReprodutorMusical {
+    String modelo;
+    String cor;
+    String sistemaOperacional;
+    int memoria;
 
 
 

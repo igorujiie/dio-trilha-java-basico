@@ -1,6 +1,9 @@
 package AparelhoTelefonico;
 
 public class Telefone implements AparelhoTelefonico{
+    String nome;
+    String numero;
+
     @Override
     public void ligar(String numero) {
         numero = "999999999";
